@@ -125,8 +125,8 @@ module.exports = function (grunt) {
         },
 
         clean: {
-            dev:  ['<%= project.dev %>'],
-            dist: ['<%= project.dist %>']
+            dev:  ['<%= project.dev %>','.tmp'],
+            dist: ['<%= project.dist %>','.tmp']
         },
 
         /*
