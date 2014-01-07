@@ -1,4 +1,4 @@
-Opinionated Baseeline for ReactJS Projects
+Opinionated Baseline for ReactJS Projects
 ==========================================
 
 **this is a living work in progress, please keep that in mind**
@@ -27,7 +27,6 @@ First, lets clone the repo
 ```
 git clone git@github.com:intabulas/reactjs-baseline.git NewProject 
 cd NewProject
-
 ```
 
 **note** at this point, do your normal steps for a new git repo and adding the remote
@@ -43,11 +42,10 @@ Now lets install dependencies (*prefix with sudo as needed*)
 ```
 gem install sass
 npm install
-bower install
+grunt bower:install
 ``` 
 
 Now Edit package.json and replace the content as you see fit. The grunt scripts use the 'name' from package.json for naming files (ie: css, js, etc)
-
 
 Development
 -----------
@@ -87,7 +85,7 @@ npm run jsxhint
 Todos
 -----
 
-1. Concat vendor js into a single file
+1. ~~Concat vendor js into a single file~~
 2. ~~Integrate [JSXHint](https://github.com/CondeNast/JSXHint)~~
 3. Add some tests
 4. Use pkg.version when naming files
