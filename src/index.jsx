@@ -6,5 +6,6 @@ $(function() {
         <Application />,
         document.getElementById('application')
     );
+    
 
 });

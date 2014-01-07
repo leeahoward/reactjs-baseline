@@ -1,8 +1,10 @@
+/.tmp/
+
+/dev/
+
 /.sass-cache/
 
 /bower_components/
-
-/development/
 
 /dist/
 

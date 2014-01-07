@@ -4,19 +4,22 @@
         <title>@@pkg_name</title>
         <meta charset='utf-8'>
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link href='/css/vendor/normalize.css' rel='stylesheet' type='text/css'>
-        <link href='/css/@@pkg_name.css' rel='stylesheet' type='text/css'>
-
+        <!-- build:css lib/css/styles.css -->
+        <link href='lib/css/normalize-css/normalize.css' rel='stylesheet' type='text/css'>
+        <link href='lib/css/@@pkg_name/application.css' rel='stylesheet' type='text/css'>
+        <!-- endbuild -->
     </head>
 
     <body>
         <div id="application">
             <!-- ReactJS Application Renders Here -->
         </div>
-        <script src="/js/vendor/zepto.min.js"></script>
-        <script src="/js/vendor/react.min.js"></script>
-        <script src="/js/vendor/director.min.js"></script>
-        <script src="/js/@@pkg_name.js"></script>
+        <!-- build:js lib/js/scripts.js -->
+        <script src="lib/js/zepto/zepto.js"></script>
+        <script src="lib/js/react/react.js"></script>
+        <script src="lib/js/director/director.js"></script>
+        <script src="lib/js/@@pkg_name/index.js"></script>
+        <!-- endbuild -->
     </body>
 
 </html>
