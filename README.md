@@ -25,9 +25,8 @@ This is how I go about using my baseline
 First, lets clone the repo 
 
 ```
-mkdir new_project_name
-cd new_project_name
-git clone git@github.com:intabulas/reactjs-baseline.git .
+git clone git@github.com:intabulas/reactjs-baseline.git NewProject 
+cd NewProject
 
 ```
 
@@ -68,20 +67,13 @@ grunt dist
 
 Will build the production (self contained) instance into ./dist. CSS and JS are uglified and minified as appropriate
 
-
 Running
 -------
-
-Personaly I use [Nodejitsu's](https://www.nodejitsu.com/) [http-server](https://github.com/nodeapps/http-server) to run the instances. Effectivly a node version of python's SimpleHTTPServer.
-
-example:
-
 ```
-cd development
-http-server
+grunt serve
 ```
+Will build the dev version and start the connect server on port 9003 with live reload enabled on port 35730.  You can modify these ports in Gruntfile.js if you need to.
 
-Now visit [http://localhost:8080](http://localhost:8080) or whatever port http-server says its running on
 
 Other Things
 ------------
